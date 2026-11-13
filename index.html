@@ -2,105 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cyber Quest</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta http-equiv="refresh" content="0; url=frontend/index.html">
+  <title>Cyber Quest: Circuit Fighter</title>
+  <style>
+    body {
+      background: #090d18;
+      color: #5ce1e6;
+      font-family: Inter, system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    a {
+      color: #07151a;
+      background: #5ce1e6;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 16px;
+    }
+  </style>
+  <script>
+    window.location.href = "frontend/index.html";
+  </script>
 </head>
-<body class="intro-active">
-  <main class="wrap">
-    <header>
-      <div class="logo">CYBER QUEST</div>
-      <div class="tag">A turn-based adventure</div>
-    </header>
-
-    <section class="panel start" id="startScreen">
-      <div class="level-label">Character selection</div>
-      <h1>Choose your <span class="accent">hero</span></h1>
-      <p class="muted">Enter your name and choose a class to begin the adventure.</p>
-
-      <label for="playerName">Character name</label>
-      <input id="playerName" maxlength="18" placeholder="Enter a name" value="Hero">
-
-      <label>Choose your class</label>
-      <div class="class-options">
-        <button class="class-btn selected" data-class="Warrior" type="button">⚔️ Warrior</button>
-        <button class="class-btn" data-class="Mage" type="button">✨ Mage</button>
-      </div>
-
-      <button class="primary start-btn" id="startButton" type="button">Start adventure</button>
-    </section>
-
-    <section class="game" id="gameScreen">
-      <div class="topline">
-        <div>
-          <div class="level-label" id="levelLabel">Level 1</div>
-          <h1 id="missionTitle">Mission</h1>
-          <div class="muted" id="missionText">Defeat the enemy!</div>
-        </div>
-        <div class="stats">
-          <span class="chip" id="heroChip">Hero</span>
-          <span class="chip">XP: <b id="xpValue">0</b></span>
-          <span class="chip">Coins: <b id="coinValue">0</b></span>
-        </div>
-      </div>
-
-      <div class="battle-grid">
-        <article class="panel combatant">
-          <div class="level-label">Your hero</div>
-          <h2 id="heroName">Hero</h2>
-          <div class="muted" id="heroClass">Warrior</div>
-          <div class="portrait" id="heroIcon">⚔️</div>
-          <div class="bar-info"><span>Health</span><span id="heroHealthText"></span></div>
-          <div class="bar"><div class="fill" id="heroHealthBar"></div></div>
-          <p class="muted" style="margin:12px 0 0">Attack damage: <b id="heroDamage"></b></p>
-        </article>
-
-        <article class="panel combatant enemy">
-          <div class="level-label pink">Enemy encounter</div>
-          <h2 id="enemyName">Enemy</h2>
-          <div class="muted" id="enemyDetail">Hostile target</div>
-          <div class="portrait" id="enemyIcon">👾</div>
-          <div class="bar-info"><span>Health</span><span id="enemyHealthText"></span></div>
-          <div class="bar"><div class="fill" id="enemyHealthBar"></div></div>
-          <p class="muted" style="margin:12px 0 0">Attack damage: <b id="enemyDamage"></b></p>
-        </article>
-      </div>
-
-      <div class="lower-grid">
-        <section class="panel">
-          <h3>Battle log</h3>
-          <div class="log" id="battleLog" aria-live="polite"></div>
-        </section>
-
-        <section class="panel">
-          <h3>Choose an action</h3>
-          <div class="actions" id="actionButtons">
-            <button class="primary" data-action="attack" type="button">⚔️ Attack</button>
-            <button data-action="defend" type="button">🛡️ Defend</button>
-            <button data-action="potion" type="button">🧪 Use potion (<span id="potionCount">3</span>)</button>
-            <button data-action="inventory" type="button">🎒 View inventory</button>
-            <button class="danger" data-action="run" type="button">↗ Run away</button>
-          </div>
-          <p class="notice" id="notice"></p>
-          <button class="primary hidden" id="nextButton" type="button">Continue to next level →</button>
-          <button class="primary hidden" id="restartButton" type="button">Play again</button>
-        </section>
-      </div>
-    </section>
-  </main>
-
-  <section class="game-intro" id="gameIntro" aria-label="Cyber Quest title screen">
-    <img src="../assets/game-cover.svg"
-         alt="Cyber Quest: Circuit Fighter cover art">
-
-    <h1>CYBER QUEST: Circuit Fighter</h1>
-
-    <p class="creator">Created by Mandeep Singh</p>
-
-    <button class="intro-start" id="introStartButton" type="button">
-      START GAME
-    </button>
-  </section>
+<body>
+  <h1>CYBER QUEST</h1>
+  <p>Redirecting to the game interface...</p>
+  <a href="frontend/index.html">Launch Cyber Quest</a>
 </body>
 </html>
